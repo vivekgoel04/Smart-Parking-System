@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/item_navigation_drawer_parking_history"
+            android:title="Parking History" />
+        <item
+            android:id="@+id/item_navigation_drawer_garage_info"
+            android:title="Garage Information" />
+        <item
+            android:id="@+id/item_navigation_drawer_mobile_payment"
+            android:title="Mobile Payment" />
+        <item
+            android:id="@+id/item_navigation_drawer_settings"
+            android:title="Settings" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/setTimerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="YOU ARE PARKED AT"
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+            android:textColor="#5d5dd5" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#808080" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/optionFragmentMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSetTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7B68EE"
+        android:text="Set Timer" />
+</LinearLayout>

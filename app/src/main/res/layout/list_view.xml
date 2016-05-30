@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LiLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#FFFFFF">
+    
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/parking_icon" />
+	
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/face"
+        android:text="Address"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewSlotNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAddress"
+        android:layout_marginLeft="68dp"
+        android:text="Slot Number"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>
